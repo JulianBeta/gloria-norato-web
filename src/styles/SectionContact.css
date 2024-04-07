@@ -1,0 +1,24 @@
+.titlecontact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorsectioncontact {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+}
+
+.contenedormapa {
+
+}
+
+.logosydireccion {
+
+}
+
+.imagenlogocontacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
