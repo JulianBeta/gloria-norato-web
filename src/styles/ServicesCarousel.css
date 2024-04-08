@@ -1,0 +1,7 @@
+.maincarrusel {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}

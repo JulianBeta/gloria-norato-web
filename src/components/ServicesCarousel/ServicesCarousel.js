@@ -1,6 +1,6 @@
 import React, { useState }from "react";
-import { ImageCarousel } from "./ImageCarousel";
-
+import { ImageCarousel } from "./ImageCarouselServices";
+import "./../../styles/ServicesCarousel.css"
 
 function ServicesCarousel() {
 

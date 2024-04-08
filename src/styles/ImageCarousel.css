@@ -1,0 +1,27 @@
+.image-carousel-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 5%;
+}
+
+.image-carousel {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow: hidden;
+}
+.carousel-image {
+    margin: 0 10px;
+    cursor: pointer;
+    scroll-snap-align: center;
+}
+
+.main-image {
+    width: 373px;
+    height: 462px;
+    z-index: 10;
+}
+
+.side-image {
+    width: 117px;
+    height: 162px;
+}

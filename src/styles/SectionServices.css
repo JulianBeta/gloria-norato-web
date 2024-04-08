@@ -1,0 +1,27 @@
+.Services {
+    background-color: #F4ECE1;
+}
+
+.ServicesTitle {
+    width: 100%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 0%;
+}
+
+.Columns {
+    display: flex;
+}
+
+.LeftColumn { 
+    width: 40%;
+    padding-left: 10%;
+    padding-right: 5%;
+}
+
+.RightColumn {
+    width: 60%;
+    text-align: center;
+    padding-left: 10%;
+}

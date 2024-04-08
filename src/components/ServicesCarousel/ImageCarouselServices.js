@@ -1,20 +1,10 @@
 import React, { useRef } from 'react';
-import { Image } from './Image';
+import { Image } from './ImageServices';
+import "./../../styles/ImageCarousel.css"
 
 
 function ImageCarousel ({ images, selectedIndex, handleImageClick }) {
   const containerRef = useRef(null);
-
-  const handleScroll = (scrollDirection) => {
-    const container = containerRef.current;
-    const scrollAmount = 300; 
-
-    if (scrollDirection === 'left') {
-      container.scrollLeft -= scrollAmount;
-    } else if (scrollDirection === 'right') {
-      container.scrollLeft += scrollAmount;
-    }
-  };
 
   const getNormalizedIndex = (index) => {
     const length = images.length;

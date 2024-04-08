@@ -1,6 +1,8 @@
+import { ProductsCarousel } from "./../components/ProductsCarousel/ProductsCarousel";
+
 function SectionProducts() {
     return (
-        <p>Section Products</p>
+        <ProductsCarousel />
     );
 }
 
