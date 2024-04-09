@@ -1,24 +1,67 @@
-.titlecontact {
+.contenedorconctact {
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    background-color: bisque;
+    height: 100%;
+    border-top: 100px;
+    border-bottom: 100px;
+
 }
+
+.titlemaincontact {
+    left: 20%;
+}
+
+
 
 .contenedorsectioncontact {
+    position: relative ;
     display: grid;
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 7fr 3fr;
+       
+    background: #d89a9a;
+    height: 80%;
+    padding: 50px 200px;
+    border: 50px;
 }
 
+@media all and (max-width: 480px) {
+    .contenedorsectioncontact {
+        display: flex;
+        flex-direction: column;
+    
+} 
+    
+}
+
+.titlecontact {
+    position: absolute;
+    top: 0%;
+    left: 40%;
+   
+}
 .contenedormapa {
+    
+    height: 100%;
+    width: 100%;
+    float: none;
+    
+    
 
 }
 
-.logosydireccion {
 
+
+.listalogos {
+
+    list-style: none;
+    color: black;
 }
+
+
 
 .imagenlogocontacto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    position: relative;
+    left: 90%;    
 }
