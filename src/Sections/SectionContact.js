@@ -23,10 +23,10 @@ function SectionContact() {
                 <div className='contenedormapa'> <SimpleMap /></div>
                 <div className='logosydireccion'>
                     <li className='listalogos'>
-                        <ul><img src={LogoMP} /> <><><></></></>Cra. 53 #141-69 local 102, Bogotá</ul>
+                        <ul><img src={LogoMP} /> <></>Cra. 53 #141-69 local 102, Bogotá</ul>
                         <ul><img src={LogoWA} /></ul>
                         <ul><img src={LogoIG} /></ul>
-                        <ul><img src={LogoML} /><><><></></></> cccccccc@asdsadasdd.com</ul>
+                        <ul><img src={LogoML}/> ccccc@asdd.com</ul>
                     </li></div>
             </div>
 
