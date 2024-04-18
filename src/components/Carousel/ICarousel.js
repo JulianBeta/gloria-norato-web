@@ -43,12 +43,7 @@ const ICarousel = ({ images, selectedIndex, handleImageClick }) => {
 return (
   <div className="image-carousel-container" ref={containerRef}>
     <div className="image-carousel">{renderImages()}</div>
-    {/* <button className="scroll-button left" onClick={() => handleScroll('left')}>
-      &lt;
-    </button>
-    <button className="scroll-button right" onClick={() => handleScroll('right')}>
-      &gt;
-    </button> */}
+    
   </div>
 );
 
