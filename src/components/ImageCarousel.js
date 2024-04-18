@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import { Image } from './Image';
+import Image from './Carousel/Image';
 
 
 function ImageCarousel ({ images, selectedIndex, handleImageClick }) {
