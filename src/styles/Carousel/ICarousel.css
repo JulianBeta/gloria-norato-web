@@ -1,0 +1,44 @@
+.image-carousel-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image-carousel {
+    display: flex;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+  }
+  
+  .carousel-image {
+    margin: 0 10px;
+    cursor: pointer;
+    scroll-snap-align: center;
+  }
+  
+  .main-image {
+    width: 462px;
+    height: 373;
+  }
+  
+  .side-image {
+    width: 117px;
+    height: 162px;
+  }
+  
+  .scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .left {
+    left: 10px;
+  }
+  
+  .right {
+    right: 10px;
+  }

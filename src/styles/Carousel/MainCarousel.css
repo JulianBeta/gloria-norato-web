@@ -1,0 +1,23 @@
+.maincarrusel {
+    position: relative;   
+    width: 100%;
+
+  }
+  
+  .image-carousel {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel-image {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .main-image {
+    width: 20em;
+  }
+  
+  .side-image {
+    width: 5em;
+  }
