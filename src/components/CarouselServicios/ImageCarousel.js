@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
-import Image from './Carousel/Image';
+import ImageServices from './ImageServices';
+import "./../../styles/CarouselServices/ICarouselService.css"
 
 
 function ImageCarousel ({ images, selectedIndex, handleImageClick }) {
@@ -30,7 +31,7 @@ function ImageCarousel ({ images, selectedIndex, handleImageClick }) {
     return [-1, 0, 1].map((offset) => {
       const index = getNormalizedIndex(normalizedIndex + offset);
       return (
-        <Image
+        <ImageServices
           key={index}
           src={`./../image/${images[index]}`}
           
@@ -42,8 +43,8 @@ function ImageCarousel ({ images, selectedIndex, handleImageClick }) {
   };
 
 return (
-  <div className="image-carousel-container" ref={containerRef}>
-    <div className="image-carousel">{renderImages()}</div>
+  <div className="image-carouselservice-container" ref={containerRef}>
+    <div className="image-carouselService">{renderImages()}</div>
   </div>
 );
 

@@ -4,11 +4,14 @@
 
   }
   
-  .image-carousel {
-    display: flex;
-    justify-content: center;
+  .carrusel {
+    position: relative;
   }
-  
+
+  .preciocarrusel {
+    position: absolute;
+  }
+
   .carousel-image {
     margin: 0 10px;
     cursor: pointer;

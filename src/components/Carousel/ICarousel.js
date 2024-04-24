@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import Image from './Image';
 import './../../styles/Carousel/ICarousel.css'
 
-const ICarousel = ({ images, selectedIndex, handleImageClick }) => {
+const ICarousel = ({ images, selectedIndex, handleImageClick, texto}) => {
   const containerRef = useRef(null);
 
   const handleScroll = (scrollDirection) => {
@@ -35,6 +35,7 @@ const ICarousel = ({ images, selectedIndex, handleImageClick }) => {
           src={`/image/${images[index]}`}
           isSelected = { offset === 0}
           onClick = {() => handleImageClick(index)}
+          texto= 'su madre'
         />
       );
     });
