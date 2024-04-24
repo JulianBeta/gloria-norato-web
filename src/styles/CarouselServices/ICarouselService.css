@@ -1,9 +1,9 @@
-.image-carousel-container {
+.image-carouselservice-container {
     position: relative;
     overflow: hidden;
   }
   
-  .image-carousel {
+  .image-carouselService {
     display: flex;
     /* scroll-snap-type: x mandatory; */
     overflow: hidden;

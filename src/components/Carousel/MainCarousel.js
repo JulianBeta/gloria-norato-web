@@ -3,31 +3,14 @@ import ICarousel from './ICarousel.js';
 import './../../styles/Carousel/MainCarousel.css'
 
 
-const MainCarousel = () => { {{
+const MainCarousel = () => { {
 
-    const Products = () => {
-[
-    {
-        "image" : "image1.json", 
-        "price" : "$ 1.000", 
-        "name" : "Champu"  
-    },
-    {
-        "image" : "image2.json", 
-        "price" : "$ 2.200", 
-        "name" : "Champu para la caspa"
-    },
-    {
-        "image" : "image3.json", 
-        "price" : "$ 3.500", 
-        "name" : "Acondicionador"
-    }
-]}
+    
 ;
     }
 
-    // const imageFilenames = ['prod1.png', 'prod2.png', 'prod3.png', 'prod4.png', 'prod5.png', 'prod6.png']; 
-    // const precio = {
+    const imageFilenames = ['prod1.png', 'prod2.png', 'prod3.png', 'prod4.png', 'prod5.png', 'prod6.png']; 
+    const precio = {
 
     }
     const nombreProducto = [] 
@@ -41,12 +24,15 @@ const MainCarousel = () => { {{
 
   return (
     <div className="maincarrusel">
-      
-      <ICarousel
-        images={Products}
+      <div className="carrusel">
+      <ICarousel 
+        images={imageFilenames}
         selectedIndex={selectedIndex}
         handleImageClick={handleImageClick}
+        
       />
+      {/* <p className='preciocarrusel'>Precio Producto</p> */}
+      </div>
       
     </div>
   );
