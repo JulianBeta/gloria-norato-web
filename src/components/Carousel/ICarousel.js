@@ -5,16 +5,16 @@ import './../../styles/Carousel/ICarousel.css'
 const ICarousel = ({ images, selectedIndex, handleImageClick, texto}) => {
   const containerRef = useRef(null);
 
-  const handleScroll = (scrollDirection) => {
-    const container = containerRef.current;
-    const scrollAmount = 300; // Adjust as needed
+  // const handleScroll = (scrollDirection) => {
+  //   const container = containerRef.current;
+  //   const scrollAmount = 300; // Adjust as needed
 
-    if (scrollDirection === 'left') {
-      container.scrollLeft -= scrollAmount;
-    } else if (scrollDirection === 'right') {
-      container.scrollLeft += scrollAmount;
-    }
-  };
+  //   if (scrollDirection === 'left') {
+  //     container.scrollLeft -= scrollAmount;
+  //   } else if (scrollDirection === 'right') {
+  //     container.scrollLeft += scrollAmount;
+  //   }
+  // };
 
   const getNormalizedIndex = (index) => {
     const length = images.length;
@@ -35,7 +35,7 @@ const ICarousel = ({ images, selectedIndex, handleImageClick, texto}) => {
           src={`/image/${images[index]}`}
           isSelected = { offset === 0}
           onClick = {() => handleImageClick(index)}
-          texto= 'su madre'
+          
         />
       );
     });
