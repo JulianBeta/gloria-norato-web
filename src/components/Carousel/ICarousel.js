@@ -1,8 +1,9 @@
 import React, { useRef } from 'react';
 import Image from './Image';
 import './../../styles/Carousel/ICarousel.css'
+import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 
-const ICarousel = ({ images, selectedIndex, handleImageClick, texto}) => {
+const ICarousel = ({ images, selectedIndex, handleImageClick}) => {
   const containerRef = useRef(null);
 
   // const handleScroll = (scrollDirection) => {
@@ -20,6 +21,7 @@ const ICarousel = ({ images, selectedIndex, handleImageClick, texto}) => {
     const length = images.length;
     if (index < 0) {
       return length + (index % length);
+      console.log (index)
     }
     return index % length;
   };
@@ -37,6 +39,7 @@ const ICarousel = ({ images, selectedIndex, handleImageClick, texto}) => {
           onClick = {() => handleImageClick(index)}
           
         />
+        
       );
     });
   };
