@@ -1,50 +1,36 @@
 import React, { useState } from 'react';
 import ICarousel from './ICarousel.js';
 import './../../styles/Carousel/MainCarousel.css'
-
+import IText from './IText.js';
 
 const MainCarousel = () => { {
-
-
     
+
 ;
     }
 
     const imageFilenames = ['prod1.png', 'prod2.png', 'prod3.png', 'prod4.png', 'prod5.png', 'prod6.png']; 
-    const textoProducto = [
-      {
-       price:"$US9000", 
-       description: "Crema Hidratante" 
-      },
-      {
-        price:"$2000", 
-        description: "Champú Reparador" 
-       },
-       {
-        price:"$100", 
-        description: "Mascarilla Hidratante Intensa" 
-       },
-       {
-        price:"$100", 
-        description: "Crema Hidratante" 
-       },
-       {
-        price:"$100", 
-        description: "Crema Hidratante" 
-       },
-       {
-        price:"$100", 
-        description: "Crema Hidratante" 
-       }           
-    ]
-    const nombreProducto = [] 
-
+    const textFilenames = ['pruebatexto.png', 'champú.png', 'cremamanos.png', 'prod4.png', 'prod5.png', 'prod6.png'
+      
+    ];
+   
+    
+    
+    
 
   const [selectedIndex, setSelectedIndex] = useState(0);
 
-  const handleImageClick = (index) => {
-    setSelectedIndex(index);
+  const handleImageClick = (index, indextext) => {
+    setSelectedIndex(index, indextext);
   };
+
+  // const [selectedIndexText, setSelectedIndexText] = useState(0);
+
+  // const handleImageClick = (indextext) => {
+  //   setSelectedIndexText(indextext);
+  // };
+  
+ 
 
   return (
     <div className="maincarrusel">
@@ -55,13 +41,16 @@ const MainCarousel = () => { {
         handleImageClick={handleImageClick}
         
       />
-      {/* <p className='preciocarrusel'>Precio Producto</p> */}
       </div>
       <div className='textoProducto'>
-        <p className='descripcion'>{textoProducto[0].description}</p>
-        <p className='precio'>{textoProducto[0].price}</p>
+      <IText className= 'descripcion'
+        images={textFilenames}
+        selectedIndexText={selectedIndex}
+        handleImageClicktext={handleImageClick}
+        
+      />
       </div>
-      
+            
     </div>
   );
 };

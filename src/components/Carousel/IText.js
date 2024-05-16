@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
-import Image from './Image';
+import TextProduct from './text';
 import './../../styles/Carousel/ICarousel.css'
 import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 
-const ICarousel = ({ images, selectedIndex, handleImageClick}) => {
+const IText = ({ images, selectedIndexText, handleImageClicktext}) => {
   const containerRef = useRef(null);
 
   // const handleScroll = (scrollDirection) => {
@@ -17,26 +17,26 @@ const ICarousel = ({ images, selectedIndex, handleImageClick}) => {
   //   }
   // };
 
-  const getNormalizedIndex = (index) => {
-    const length = images.length;
-    if (index < 0) {
-      return length + (index % length);
-      console.log (index)
+  const getNormalizedIndexText = (indextext) => {
+    const lengthtext = images.length;
+    if (indextext < 0) {
+      return lengthtext + (indextext % lengthtext);
+      console.log (indextext)
     }
-    return index % length;
+    return indextext % lengthtext;
   };
 
-  const renderImages = () => {
-    const normalizedIndex = getNormalizedIndex(selectedIndex);
+  const renderText = () => {
+    const normalizedIndexText = getNormalizedIndexText(selectedIndexText);
 
     return [-1, 0, 1].map((offset) => {
-      const index = getNormalizedIndex(normalizedIndex + offset);
+      const indextext = getNormalizedIndexText(normalizedIndexText + offset);
       return (
-        <Image
-          key={index}
-          src={`/image/${images[index]}`}
+        <TextProduct
+          key={indextext}
+          src={`/image/${images[indextext]}`}
           isSelected = { offset === 0}
-          onClick = {() => handleImageClick(index)}
+          onClick = {() => handleImageClick(indextext)}
           
         />
         
@@ -46,7 +46,7 @@ const ICarousel = ({ images, selectedIndex, handleImageClick}) => {
 
 return (
   <div className="image-carousel-container" ref={containerRef}>
-    <div className="image-carousel">{renderImages()}</div>
+    <div className="image-carousel">{renderText()}</div>
     
   </div>
 );
@@ -56,4 +56,4 @@ return (
   
 };
 
-export default ICarousel;
+export default IText;
