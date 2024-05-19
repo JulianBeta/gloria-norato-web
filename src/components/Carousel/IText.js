@@ -1,9 +1,9 @@
 import React, { useRef } from 'react';
 import TextProduct from './text';
 import './../../styles/Carousel/ICarousel.css'
-import { unstable_renderSubtreeIntoContainer } from 'react-dom';
+// import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 
-const IText = ({ images, selectedIndexText, handleImageClicktext}) => {
+const IText = ({ images, selectedIndex, handleImageClick}) => {
   const containerRef = useRef(null);
 
   // const handleScroll = (scrollDirection) => {
@@ -27,7 +27,7 @@ const IText = ({ images, selectedIndexText, handleImageClicktext}) => {
   };
 
   const renderText = () => {
-    const normalizedIndexText = getNormalizedIndexText(selectedIndexText);
+    const normalizedIndexText = getNormalizedIndexText(selectedIndex);
 
     return [-1, 0, 1].map((offset) => {
       const indextext = getNormalizedIndexText(normalizedIndexText + offset);
