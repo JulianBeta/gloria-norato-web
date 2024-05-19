@@ -42,11 +42,11 @@ const MainCarousel = () => { {
         
       />
       </div>
-      <div className='textoProducto'>
-      <IText className= 'descripcion'
+      <div >
+      <IText className='textoProducto'
         images={textFilenames}
-        selectedIndexText={selectedIndex}
-        handleImageClicktext={handleImageClick}
+        selectedIndex={selectedIndex}
+        handleImageClick={handleImageClick}
         
       />
       </div>

@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import Image from './Image';
 import './../../styles/Carousel/ICarousel.css'
-import { unstable_renderSubtreeIntoContainer } from 'react-dom';
+// import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 
 const ICarousel = ({ images, selectedIndex, handleImageClick}) => {
   const containerRef = useRef(null);
