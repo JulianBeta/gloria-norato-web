@@ -1,5 +1,5 @@
 import React from 'react';
-import './../../styles/Carousel/Image.css'
+// import './../../styles/Carousel/Image.css'
 
 const ImageServices = ({ src, isSelected, onClick }) => {
   const imageSize = isSelected ? 'main-image' : 'side-image';

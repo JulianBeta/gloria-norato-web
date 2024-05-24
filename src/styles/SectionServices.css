@@ -1,0 +1,29 @@
+
+.contenedorSectionServices {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    position: relative;
+    
+    
+}
+
+.contendorTextoServices {
+
+    width: 25%;
+}
+
+.contenedorCarouselService {
+    width: 40%;
+    
+}
+
+.tituloServicios {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

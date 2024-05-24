@@ -2,7 +2,6 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: #F4ECE1;
     height: 100%;
     border-top: 100px;
     border-bottom: 100px;
@@ -20,7 +19,7 @@
     display: grid;
     grid-template-columns: 7fr 3fr;
        
-    background: #d89a9a;
+    ;
     height: 80%;
     padding: 50px 200px;
     border: 50px;

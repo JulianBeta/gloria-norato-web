@@ -13,14 +13,13 @@ function ServicesCarousel() {
     };
 
   return (
-    <div className="maincarrusel">
-      
+          
       <ImageCarousel
         images={imageFilenames}
         selectedIndex={selectedIndex}
         handleImageClick={handleImageClick}
       />
-    </div>
+    
   );
 }
 
