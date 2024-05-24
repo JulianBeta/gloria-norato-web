@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import ImageServices from './ImageServices';
-import "./../../styles/CarouselServices/ICarouselService.css"
+import './../../styles/SectionServices.css'
 
 
 function ImageCarousel ({ images, selectedIndex, handleImageClick }) {
@@ -43,9 +43,9 @@ function ImageCarousel ({ images, selectedIndex, handleImageClick }) {
   };
 
 return (
-  <div className="image-carouselservice-container" ref={containerRef}>
-    <div className="image-carouselService">{renderImages()}</div>
-  </div>
+  <div className='stylecarouselservices' ref={containerRef}>
+    {renderImages()}</div>
+  
 );
 
 };

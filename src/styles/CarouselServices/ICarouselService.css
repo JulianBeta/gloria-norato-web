@@ -1,14 +1,4 @@
-.image-carouselservice-container {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .image-carouselService {
-    display: flex;
-    /* scroll-snap-type: x mandatory; */
-    overflow: hidden;
-    justify-content: center;
-  }
+
   
   .carousel-image {
     margin: 0 10px;

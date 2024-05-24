@@ -10,7 +10,7 @@ const MainCarousel = () => { {
     }
 
     const imageFilenames = ['prod1.png', 'prod2.png', 'prod3.png', 'prod4.png', 'prod5.png', 'prod6.png']; 
-    const textFilenames = ['pruebatexto.png', 'champú.png', 'cremamanos.png', 'prod4.png', 'prod5.png', 'prod6.png'
+    const textFilenames = ['pruebatexto.png', 'champú.png', 'cremamanos.png', 'AcondicionadorHiDratante.png', 'Aceite.png', 'keraschampu.png'
       
     ];
    
