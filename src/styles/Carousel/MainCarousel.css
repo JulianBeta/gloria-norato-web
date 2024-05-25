@@ -1,4 +1,5 @@
 .maincarrusel {
+  margin-top: 5%;
     position: relative;   
     width: 100%;
 
@@ -28,7 +29,7 @@
   }
   
   .side-image {
-    width: 5em;
+    width: 7em;
   }
 
   .main-text {
@@ -38,3 +39,27 @@
   .side-text {
     width: 0em;
   }
+
+.contenedorcirculo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  right: 50%;;
+}
+
+  .circulo {
+    border: solid 7em #D89A9A;;
+    border-radius: 100%;
+    width: 7em;
+    
+
+    
+
+    background-color: #D89A9A;
+
+  }
+
+  

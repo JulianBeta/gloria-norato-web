@@ -4,7 +4,9 @@ import MainCarousel from "../components/Carousel/MainCarousel";
 
 function SectionProducts() {
     return (
-        <p><MainCarousel/></p>
+        
+        <div><MainCarousel/></div>
+        
     );
 }
 

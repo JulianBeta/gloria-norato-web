@@ -23,10 +23,10 @@ function SectionContact() {
                 <div className='contenedormapa'> <SimpleMap /></div>
                 <div className='logosydireccion'>
                     <li className='listalogos'>
-                        <ul><img src={LogoMP} /> <></>Cra. 53 #141-69 local 102, Bogotá</ul>
+                       <ul><img src={LogoMP} /> </ul>
                         <ul><img src={LogoWA} /></ul>
-                        <ul><img src={LogoIG} /></ul>
-                        <ul><img src={LogoML}/> ccccc@asdd.com</ul>
+                       <a target='_blank' href='https://www.instagram.com/glorianorato_hairdesignstudio?igsh=MWFkdGI0Y3ltMHpqOQ=='> <ul><img src={LogoIG} /></ul></a>
+                        <ul><img src={LogoML}/></ul>
                     </li></div>
             </div>
 

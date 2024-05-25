@@ -64,3 +64,10 @@
     position: relative;
     left: 90%;    
 }
+
+.marcador {
+    border: solid red 4px;
+    width: 1%;
+    height: 1%;
+    border-radius: 100%;
+}
