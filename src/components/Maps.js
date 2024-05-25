@@ -12,7 +12,7 @@ export function SimpleMap(){
       lng: -74.05545738674704
     },
     zoom: 175,
-    d
+    
     
 
   };
