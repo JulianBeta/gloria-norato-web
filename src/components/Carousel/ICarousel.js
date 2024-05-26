@@ -21,7 +21,6 @@ const ICarousel = ({ images, selectedIndex, handleImageClick}) => {
     const length = images.length;
     if (index < 0) {
       return length + (index % length);
-      console.log (index)
     }
     return index % length;
   };

@@ -36,6 +36,8 @@ header {
     margin: 0 0.05rem;
     border-radius: 0.5rem;
     color: gray;
-    font-family: 'NewMacchiato';
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 

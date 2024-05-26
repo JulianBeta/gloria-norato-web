@@ -9,7 +9,10 @@
 }
 
 .titlemaincontact {
-    left: 20%;
+    text-align: center;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 
@@ -38,7 +41,9 @@
     position: absolute;
     top: 0%;
     left: 40%;
-   
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 .contenedormapa {
     

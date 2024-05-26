@@ -8,7 +8,7 @@ import SectionFooter from './Sections/SectionFooter';
 import { ServicesCarousel } from './components/CarouselServicios/ServicesCarousel';
 import logo from './assets/image/Logo_SalonDeBelleza.png'
 import './styles/SectionHeader.css'
-import logofondo from './assets/image/fondoflores.png'
+import logofondo from './assets/image/fondofinalfinal.jpg'
 
 
 
@@ -21,7 +21,7 @@ function App() {
 }
   
   return (
-    <div style={{background: `url(${logofondo})`, backgroundRepeat: 'no-repeat', backgroundAttachment: 'local', backgroundSize: 'cover', } }>
+    <div style={{background: `url(${logofondo})`, backgroundRepeat: 'repeat', backgroundAttachment: 'local', backgroundSize: '100%'   } }>
       
             <div>
                 <nav className="navbar">
