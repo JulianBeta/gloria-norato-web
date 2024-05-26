@@ -12,8 +12,11 @@
 }
 
 .contendorTextoServices {
-
     width: 25%;
+}
+
+.contendorTextoServices h1 {
+    font-size: 15px;
 }
 
 .contenedorCarouselService {
@@ -22,8 +25,12 @@
 }
 
 .tituloServicios {
-    
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5%;
 }
+

@@ -13,13 +13,13 @@ function SectionContact() {
     return (
                 
         <div className='contenedorconctact'>
-            <div className='titlemaincontact'>
-                <h1>CONTACTOS</h1></div>
+            <div>
+                <h1  className='titlemaincontact'>CONTACTO</h1></div>
 
 
             <div className='contenedorsectioncontact'>
-                <div className='titlecontact'>
-                    <h3>Te esperamos</h3></div>
+                <div >
+                    <h3 className='titlecontact'>Te esperamos</h3></div>
                 <div className='contenedormapa'> <SimpleMap /></div>
                 <div className='logosydireccion'>
                     <li className='listalogos'>
