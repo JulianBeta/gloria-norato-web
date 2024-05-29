@@ -11,27 +11,33 @@ import './../styles/SectionContact.css'
 
 function SectionContact() {
     return (
-                
+
         <div className='contenedorconctact'>
-            <div>
-                <h1  className='titlemaincontact'>CONTACTO</h1></div>
 
-
-            <div className='contenedorsectioncontact'>
-                <div >
-                    <h3 className='titlecontact'>Te esperamos</h3></div>
-                <div className='contenedormapa'> <SimpleMap /></div>
-                <div className='logosydireccion'>
-                    <li className='listalogos'>
-                       <ul><img src={LogoMP} /> </ul>
-                        <ul><img src={LogoWA} /></ul>
-                       <a target='_blank' href='https://www.instagram.com/glorianorato_hairdesignstudio?igsh=MWFkdGI0Y3ltMHpqOQ=='> <ul><img src={LogoIG} /></ul></a>
-                        <ul><img src={LogoML}/></ul>
-                    </li></div>
+            <div className='titlecontact'>
+                <h1 c>CONTACTO</h1>
             </div>
 
+            <div className='teesperamos'>
+                <h3>Te esperamos</h3>
+            </div>
 
-            <div className='imagenlogocontacto'><img src={LogoPequeño} /></div>
+            <div className='contenedormapa'>
+                 <SimpleMap />
+            </div>
+            
+            <div className='logosydireccion'>
+                <li className='listalogos'>
+                    <ul><img src={LogoMP} /> </ul>
+                    <ul><img src={LogoWA} /></ul>
+                    <a target='_blank' href='https://www.instagram.com/glorianorato_hairdesignstudio?igsh=MWFkdGI0Y3ltMHpqOQ=='> <ul><img src={LogoIG} /></ul></a>
+                    <ul><img src={LogoML} /></ul>
+                </li>
+            </div>
+
+            <div className='imagenlogocontacto'>
+                <img src={LogoPequeño} />
+            </div>
 
         </div>
     );

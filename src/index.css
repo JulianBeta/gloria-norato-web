@@ -14,3 +14,9 @@
 code {
   font-family: jerio;
 }
+
+body {
+  width: 100vw;
+  min-width: 100%;
+  overflow-x : hidden;  
+}
