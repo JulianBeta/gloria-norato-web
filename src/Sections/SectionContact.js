@@ -1,11 +1,11 @@
 import React from 'react'
 import Logo_SalonDeBelleza from './../assets/image/Logo_SalonDeBelleza.png'
 import SimpleMap from '../components/Maps.js';
-import LogoML from './../assets/image/logo-mail.png'
-import LogoWA from './../assets/image/logo-wasap.jfif'
-import LogoIG from './../assets/image/logo-insta.jpg'
+import LogoML from './../assets/image/Imagenmail.jpg'
+import LogoWA from './../assets/image/ImagenWA.jpg'
+import LogoIG from './../assets/image/ImagenInstagram.jpg'
 import LogoPequeño from './../assets/image/logo-pequeño.png'
-import LogoMP from './../assets/image/logopunteromapa.png'
+import LogoMP from './../assets/image/imagenubicacion.jpg'
 import './../styles/SectionContact.css'
 
 
@@ -19,27 +19,31 @@ function SectionContact() {
             </div>
 
             <div className='teesperamos'>
-                <h3>Te esperamos</h3>
+                <h2>Te esperamos</h2>
             </div>
 
             <div className='contenedormapa'>
-                 <SimpleMap />
-            </div>
+            <a className='mapa' target='_blank' href='https://maps.app.goo.gl/A4QojNyJgwrAt5Fp8'><SimpleMap /></a>
+             </div>
             
             <div className='logosydireccion'>
                 <li className='listalogos'>
                     <ul><img src={LogoMP} /> </ul>
                     <ul><img src={LogoWA} /></ul>
-                    <a target='_blank' href='https://www.instagram.com/glorianorato_hairdesignstudio?igsh=MWFkdGI0Y3ltMHpqOQ=='> <ul><img src={LogoIG} /></ul></a>
-                    <ul><img src={LogoML} /></ul>
+                     <ul><img src={LogoML} /></ul>
                 </li>
             </div>
+           
+
+    
 
             <div className='imagenlogocontacto'>
-                <img src={LogoPequeño} />
-            </div>
-
+                <img className='franja' src={LogoPequeño} />
+            </div> 
+            
         </div>
+        // <div ></div>
+        
     );
 }
 
