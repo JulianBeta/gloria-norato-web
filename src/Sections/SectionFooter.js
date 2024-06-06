@@ -6,8 +6,8 @@ const SectionFooter = () => {
         <div className="footerprobe">
             <div >
                     <div >
-                     <div>Todos los derechos reservados</div><div>Gloria Norato</div>
-                     <div>Copyright © 2023</div>
+                     <div className="textfooter">Todos los derechos reservados</div><div className="textfooter">Gloria Norato</div>
+                     <div className="textfooter">Copyright © 2023</div>
                        </div>
                 </div>
         </div>
