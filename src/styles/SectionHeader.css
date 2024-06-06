@@ -1,3 +1,5 @@
+
+
 header {
     width: 100%;
     position: fixed;
@@ -10,8 +12,10 @@ header {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    position: fixed;
     background-color: #D89A9A;
-    top: 20px;
+    top: 0px;
+    z-index: 1000;
     overflow: hidden;
     width: 100%;
     padding: 7px;
@@ -32,5 +36,8 @@ header {
     margin: 0 0.05rem;
     border-radius: 0.5rem;
     color: gray;
-    font-family: 'NewMacchiato';
+    font-family: "Philosopher", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+

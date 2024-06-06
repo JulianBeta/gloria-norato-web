@@ -1,0 +1,32 @@
+.footerprobe {
+    
+    display: flex;
+    background: #D89A9A;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1%;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    font-family: "Philosopher", sans-serif;
+
+}
+
+.textfooter {
+    color: white;
+}
+
+/* .FooterContainer {
+display: flex;
+flex-direction: column;
+
+max-width: 1000px;
+bottom: 0;
+}
+
+.Column {
+display: flex;
+flex-direction: column;
+text-align: center;} */

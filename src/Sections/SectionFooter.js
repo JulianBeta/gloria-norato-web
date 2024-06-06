@@ -1,7 +1,20 @@
-function SectionFooter() {
+import React from "react";
+import './../styles/SectionFooter.css'
+ 
+const SectionFooter = () => {
     return (
-        <p>Section Footer</p>
+        <div className="footerprobe">
+            <div >
+                    <div >
+                     <div className="textfooter">Todos los derechos reservados</div><div className="textfooter">Gloria Norato</div>
+                     <div className="textfooter">Copyright © 2023</div>
+                       </div>
+                </div>
+        </div>
     );
-}
+};
 
-export { SectionFooter }
+
+
+
+export default SectionFooter;

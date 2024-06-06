@@ -1,4 +1,4 @@
-import gloria from "./../assets/image/glo.png"
+import gloria from "./../assets/image/fotoglo.png"
 import "./../styles/SectionIntro.css"
 
 function SectionIntro() {
@@ -18,7 +18,7 @@ function SectionIntro() {
 
                     <br></br>En mi estudio, te ofrezco un ambiente acogedor y profesional donde tu satisfacción 
                     es mi prioridad. Además, como parte de mi compromiso con la excelencia, utilizo productos de 
-                    la más alta calidad, incluyendo la prestigiosa línea de Moroccanoil. La reputación de 
+                    la más alta calidad, incluyendo las prestigiosas líneas de Moroccanoil, Kérastase y L'Oréal. La reputación de 
                     Moroccanoil en la industria de la belleza es incomparable, gracias a sus fórmulas innovadoras 
                     que nutren, protegen y embellecen el cabello.<br></br>
 
@@ -26,7 +26,7 @@ function SectionIntro() {
                     Design Studio.<br></br> 
 
                     <br></br>¡Déjame ayudarte a alcanzar el look que siempre has deseado!</p>
-                <button className="whatsapp-button">Agenda Tu Cita</button>
+                <button className="botonintro">Agenda Tu Cita</button>
             </div>
         </div>
     );

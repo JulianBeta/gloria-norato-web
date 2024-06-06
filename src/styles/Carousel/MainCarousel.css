@@ -1,0 +1,65 @@
+.maincarrusel {
+  margin-top: 5%;
+    position: relative;   
+    width: 100%;
+
+  }
+  
+  .carrusel {
+    position: relative;
+  }
+
+  .textoProducto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    position: fixed;
+    
+  }
+
+  .carousel-image {
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .main-image {
+    width: 20em;
+  }
+  
+  .side-image {
+    width: 7em;
+  }
+
+  .main-text {
+    width: 20em;
+  }
+  
+  .side-text {
+    width: 0em;
+  }
+
+.contenedorcirculo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  right: 50%;;
+}
+
+  .circulo {
+    border: solid 7em #D89A9A;;
+    border-radius: 100%;
+    width: 7em;
+    
+
+    
+
+    background-color: #D89A9A;
+
+  }
+
+  

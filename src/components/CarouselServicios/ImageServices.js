@@ -1,17 +1,20 @@
 import React from 'react';
-//import './../../Stylesheets/image.css';
+// import './../../styles/Carousel/Image.css'
 
-function Image ({ src, isSelected, onClick }) {
+const ImageServices = ({ src, isSelected, onClick }) => {
   const imageSize = isSelected ? 'main-image' : 'side-image';
 
   return (
+    
     <img
       src={src}
-      alt="carousel"
+      alt="carousel-image"
       className={`carousel-image ${imageSize}`}
       onClick={onClick}
-    />
+    ></img>
+      
+    
   );
 };
 
-export { Image };
+export default ImageServices;

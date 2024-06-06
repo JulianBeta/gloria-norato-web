@@ -1,0 +1,9 @@
+.carousel-image {
+    border-radius: 60px;
+    transition: transform 0.2s;
+  }
+  
+  .carousel-image:hover {
+    transform: scale(1.1);
+
+  }

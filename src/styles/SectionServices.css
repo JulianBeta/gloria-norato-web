@@ -1,0 +1,40 @@
+
+.contenedorSectionServices {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    position: relative;
+    
+    
+}
+
+.contendorTextoServices {
+    width: 25%;
+}
+
+.contendorTextoServices h1 {
+    font-size: 15px;
+}
+
+.contendorTextoServices li {
+    text-align: justify;
+}
+
+.contenedorCarouselService {
+    width: 40%;
+    
+}
+
+.tituloServicios {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
