@@ -4,10 +4,11 @@
     background: #D89A9A;
     bottom: 0;
     width: 100%;
-    color: gray;
+    color: white;
     font-family: 'NewMacchiato';
     justify-content: center;
     text-align: center;
+    margin-top: 1%;
 }
 
 /* .FooterContainer {

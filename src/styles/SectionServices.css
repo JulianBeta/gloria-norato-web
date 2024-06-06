@@ -19,6 +19,10 @@
     font-size: 15px;
 }
 
+.contendorTextoServices li {
+    text-align: justify;
+}
+
 .contenedorCarouselService {
     width: 40%;
     

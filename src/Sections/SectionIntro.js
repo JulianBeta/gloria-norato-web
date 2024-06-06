@@ -26,7 +26,7 @@ function SectionIntro() {
                     Design Studio.<br></br> 
 
                     <br></br>¡Déjame ayudarte a alcanzar el look que siempre has deseado!</p>
-                <button className="whatsapp-button">Agenda Tu Cita</button>
+                <button className="botonintro">Agenda Tu Cita</button>
             </div>
         </div>
     );
