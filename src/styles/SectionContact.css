@@ -1,0 +1,165 @@
+/* .contenedorconctact {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    border-top: 100px;
+    border-bottom: 100px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+
+}
+
+.titlemaincontact {
+    text-align: center;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+   
+}
+
+
+
+.contenedorsectioncontact {
+    position: relative ;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+       
+    ;
+    height: 100%;
+    padding: 50px 200px; */
+/* border: 50px; */
+/* } */
+/* 
+@media all and (max-width: 480px) {
+    .contenedorsectioncontact {
+        display: flex;
+        flex-direction: column;
+    
+} 
+    
+}
+
+.titlecontact {
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+.contenedormapa {
+    
+    height: 100%;
+    width: 100%;
+    float: none;
+    
+    
+
+}
+
+
+
+.listalogos {
+
+    list-style: none;
+    color: black;
+}
+
+
+
+.imagenlogocontacto {
+    position: relative;
+    left: 90%;    
+} */
+
+.marcador {
+    border: solid red 4px;
+    width: 1%;
+    height: 1%;
+    border-radius: 100%;
+} 
+
+.contenedorconctact {
+    display: grid;
+    
+    
+    grid-template-columns: 1fr 1fr 1fr;
+    font-family: "Philosopher", sans-serif;
+    /* grid-template-rows: auto auto  1fr; */ 
+}
+
+.titlecontact {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 0;
+    grid-row-end: 1;
+    text-align: center;
+    padding: 1% 0;
+    margin-top: 3%;
+    background-color: #D89A9A;
+    font-family: "Philosopher", sans-serif;
+}
+
+.teesperamos {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+padding-bottom: 4%;
+
+    padding-left: 60%;
+    font-family: "Philosopher", sans-serif;
+}
+
+.contenedormapa {
+    /* grid-column-start: 1;
+    grid-column-start: 2; */
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 50%;
+    max-height: 7em;
+    padding-left: 20%; 
+     
+}
+
+.contenedormapa:hover {
+    cursor: pointer;   
+} 
+
+.logosydireccion {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding-left: 0%;
+}
+
+.listalogos {
+
+    list-style: none;
+    color: black;
+}
+
+.imagenlogocontacto {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding-left: 50%;
+    float: inline-start;
+   height: auto;
+}
+
+.franja {
+    position:sticky ;
+    bottom: 2%,  
+}
+
+.mapa {
+    cursor: pointer;
+
+}

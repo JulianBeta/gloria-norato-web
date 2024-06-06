@@ -1,0 +1,10 @@
+.productos {
+    font-family: "Philosopher", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2%;
+    padding-top: 2%;
+}
