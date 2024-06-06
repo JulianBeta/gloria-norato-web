@@ -5,10 +5,13 @@
     bottom: 0;
     width: 100%;
     color: white;
-    font-family: 'NewMacchiato';
     justify-content: center;
     text-align: center;
     margin-top: 1%;
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    font-family: "Philosopher", sans-serif;
+
 }
 
 .textfooter {
