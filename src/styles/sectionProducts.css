@@ -8,3 +8,55 @@
     padding-bottom: 2%;
     padding-top: 2%;
 }
+
+.contenedorcirculo{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    bottom: 15%;
+    left: 50%;
+    right: 50%;;
+  }
+  
+    .circulo {
+        border: solid 4em #D89A9A;
+        border-radius: 100%;
+        width: 7em;
+        height: 7em;
+
+        position: absolute;
+        background-color: #D89A9A;
+        /* position: relative; */
+        /* bottom: 0px; */
+        
+        right: 42%;
+        top: 220%;
+    }
+  
+    .circulo1 {
+        border: solid 0.5em #D89A9A;
+        border-radius: 100%;
+        width: 0.5em;
+        height: 0.5em;
+
+        position: absolute;
+        background-color: #D89A9A;
+        /* position: relative; */
+        /* bottom: 0px; */
+        right: 63%;
+        top: 265%;
+    }
+    .circulo2 {
+        border: solid 0.5em #D89A9A;
+        border-radius: 100%;
+        width: 0.5em;
+        height: 0.5em;
+
+        position: absolute;
+        background-color: #D89A9A;
+        /* position: relative; */
+        /* bottom: 0px; */
+        right: 35%;
+        top: 265%;
+    }
