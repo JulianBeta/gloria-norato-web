@@ -15,18 +15,13 @@
 }
 
 .textfooter {
-    color: white;
+    color: #F4ECE1;
 }
-
-.imagenlogocontacto {
-   
-    
-}
-
 
 .franja {
     position:sticky ;
-    bottom: 2%,  
+    max-width: 200px; 
+    max-height: 120px;
 }
 
 /* .FooterContainer {
