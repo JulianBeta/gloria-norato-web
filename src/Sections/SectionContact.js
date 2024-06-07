@@ -1,5 +1,4 @@
 import React from 'react'
-import Logo_SalonDeBelleza from './../assets/image/Logo_SalonDeBelleza.png'
 import SimpleMap from '../components/Maps.js';
 import LogoML from './../assets/image/Imagenmail.jpg'
 import LogoWA from './../assets/image/ImagenWA.jpg'
