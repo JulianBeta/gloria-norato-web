@@ -1,6 +1,6 @@
 import React from "react";
 import './../styles/SectionFooter.css';
-import LogoPequeño from './../assets/image/logo-pequeño.png' 
+import LogoPequeño from './../assets/image/LogoGN.png' 
 
 const SectionFooter = () => {
     return (
