@@ -18,6 +18,17 @@
     color: white;
 }
 
+.imagenlogocontacto {
+   
+    
+}
+
+
+.franja {
+    position:sticky ;
+    bottom: 2%,  
+}
+
 /* .FooterContainer {
 display: flex;
 flex-direction: column;

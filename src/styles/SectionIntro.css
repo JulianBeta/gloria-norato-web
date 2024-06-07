@@ -49,21 +49,23 @@
 }
 
 .text {
-    padding-right: 15%;
+    padding-right: 35%;
     padding-bottom: 7%;
     text-align: justify;
 }
 
 .botonintro {
     font-family: "Philosopher", sans-serif;
-    height: 10%;
-    width: 32%;
+    border: solid 5px #B98484;
+    height: 95px;
+    width: 190px;
     background-color: #B98484;
-    color: black;
+    color: #707070;
     font-size: larger;
-    border-radius: 8%;
+    border-radius: 45%;
     float: right;
-    margin-right: 15%;
+    margin-right: 35%;
+
     cursor: pointer;
 
 
