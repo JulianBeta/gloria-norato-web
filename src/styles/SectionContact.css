@@ -97,7 +97,8 @@
     grid-row-end: 1;
     text-align: center;
     padding: 1% 0;
-    margin-top: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     background-color: #D89A9A;
     font-family: "Philosopher", sans-serif;
 }
@@ -123,6 +124,7 @@ padding-bottom: 4%;
     width: 50%;
     max-height: 7em;
     padding-left: 20%; 
+    
      
 }
 
@@ -136,6 +138,7 @@ padding-bottom: 4%;
     grid-column-start: 3;
     grid-column-end: 4;
     padding-left: 0%;
+    
 }
 
 .listalogos {
@@ -144,22 +147,11 @@ padding-bottom: 4%;
     color: black;
 }
 
-.imagenlogocontacto {
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 3;
-    grid-column-end: 4;
-    padding-left: 50%;
-    float: inline-start;
-   height: auto;
-}
 
-.franja {
-    position:sticky ;
-    bottom: 2%,  
-}
+
 
 .mapa {
     cursor: pointer;
+    
 
 }
