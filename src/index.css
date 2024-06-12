@@ -16,14 +16,18 @@ code {
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   min-width: 100%;
   overflow-x : hidden;  
 
 }
 
-
-
+@media all and (max-width: 640px) {
+  body {
+      
+      width: 100vh;
+     
+  }}
 
 .whatsapp {
   position: fixed;

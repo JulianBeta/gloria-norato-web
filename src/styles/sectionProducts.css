@@ -1,3 +1,12 @@
+
+
+/* @media all and (max-width: 640px) {
+    .contenedorsectionproduct {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }} */
+
 .productos {
     font-family: "Philosopher", sans-serif;
     font-weight: 700;
