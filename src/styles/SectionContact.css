@@ -90,6 +90,14 @@
     /* grid-template-rows: auto auto  1fr; */ 
 }
 
+@media all and (max-width: 680px) {
+    .contenedorconctact {
+       width: 100vh;
+       margin-right: 5%;
+    
+    
+    }}
+
 .titlecontact {
     grid-column-start: 1;
     grid-column-end: 4;
@@ -102,7 +110,7 @@
     background-color: #D89A9A;
     font-family: "Philosopher", sans-serif;
 }
-
+/* 
 .teesperamos {
     grid-row-start: 1;
     grid-row-end: 2;
@@ -112,7 +120,7 @@ padding-bottom: 4%;
 
     padding-left: 60%;
     font-family: "Philosopher", sans-serif;
-}
+} */
 
 .contenedormapa {
     /* grid-column-start: 1;
@@ -128,6 +136,12 @@ padding-bottom: 4%;
      
 }
 
+@media all and (max-width: 680px) {
+    .contenedormapa {
+         width: auto;
+        padding-left: 5%;
+    padding-right: 40%;}}
+
 .contenedormapa:hover {
     cursor: pointer;   
 } 
@@ -140,12 +154,20 @@ padding-bottom: 4%;
     padding-left: 0%;
     
 }
-
+@media all and (max-width: 680px) {
+    .logosydireccion {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+         width: auto;
+        max-height: 80%;
+    padding-right: 0%;}}
 .listalogos {
 
     list-style: none;
     color: black;
 }
+
 
 
 
