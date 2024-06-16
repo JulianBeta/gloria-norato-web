@@ -34,7 +34,7 @@ const MainCarousel = () => { {
 
   return (
     <div className="maincarrusel">
-      <div className='contenedorcirculo'><div className='circulo'></div></div>
+      {/* <div className='contenedorcirculo'><div className='circulo'></div></div> */}
       <div className="carrusel">
       <ICarousel 
         images={imageFilenames}
