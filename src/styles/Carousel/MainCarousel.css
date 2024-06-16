@@ -40,26 +40,5 @@
     width: 0em;
   }
 
-.contenedorcirculo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  right: 50%;;
-}
-
-  .circulo {
-    border: solid 7em #D89A9A;;
-    border-radius: 100%;
-    width: 7em;
-    
-
-    
-
-    background-color: #D89A9A;
-
-  }
 
   
