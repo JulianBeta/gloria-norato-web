@@ -3,7 +3,6 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 87px;
-   ;
 }
 
 .imagen-gloria {
@@ -65,10 +64,7 @@
     border-radius: 45%;
     float: right;
     margin-right: 35%;
-
     cursor: pointer;
-
-
 }
 
 @media screen and (max-width: 1060px) {
@@ -76,12 +72,9 @@
         flex-direction: column;
     }
 
-    .section-right {
-        flex: 1;
-    }
-
-    .section-left {
-        width: 100%;
+    .section-right, .section-left {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
     .title {
@@ -91,11 +84,13 @@
 
     .text {
         padding-left: 15%;
+        padding-right: 15%;
         padding-bottom: 7%;
     }
 
-    .whatsapp-button {
-        position: relative;
+    .botonintro {
         width: 100%;
+        margin: 0;
+        border-radius: 0;
     }
 }
