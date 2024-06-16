@@ -22,7 +22,7 @@ body {
 
 }
 
-@media all and (max-width: 640px) {
+@media all and (max-width: 680px) {
   body {
       
       width: 100vh;

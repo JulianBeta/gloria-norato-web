@@ -1,14 +1,10 @@
-
 .contenedorSectionServices {
-    
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5%;
     width: 100%;
     position: relative;
-    
-    
 }
 
 .contendorTextoServices {
@@ -25,7 +21,6 @@
 
 .contenedorCarouselService {
     width: 40%;
-    
 }
 
 .tituloServicios {
@@ -38,3 +33,13 @@
     padding-bottom: 5%;
 }
 
+@media all and (max-width: 768px) {
+    .contenedorSectionServices {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contendorTextoServices, .contenedorCarouselService {
+        width: 90%;
+    }
+}
