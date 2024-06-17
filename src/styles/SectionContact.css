@@ -22,14 +22,18 @@
     grid-row-end: 3;
     grid-column-start: 1;
     grid-column-end: 4;
-    width: 100%;
+    width: 60%;
     max-height: 7em;
     padding-left: 20%;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
 
+.mapa:hover {
+    cursor: pointer;
 }
 
 .logosydireccion {
@@ -40,14 +44,26 @@
     padding-left: 0%;
 }
 
+.mapa {
+    height: 100%;
+    width: 100%;
+}
+
+.listalogos {
+    list-style: none;
+    color: black;
+}
+
+
 @media all and (max-width: 768px) {
     .contenedorconctact {
+        display: flex;
         grid-template-columns: 1fr;
         text-align: center;
     }
 
     .contenedormapa {
-        width: 100%;
+        min-width: 30%;
         padding-left: 5%;
         padding-right: 5%;
     }
@@ -63,5 +79,11 @@
             grid-column-end: 4;
             margin-top: 20px;
         
+    }
+
+    .mapa {
+        display: flex;
+        height: 100%;
+        width: 100%;
     }
 }
