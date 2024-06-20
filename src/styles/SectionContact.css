@@ -7,9 +7,11 @@
 .titlecontact {
     grid-column-start: 1;
     grid-column-end: 4;
+
     grid-row-start: 0;
     grid-row-end: 1;
     text-align: center;
+    
     padding: 1% 0;
     margin-top: 2%;
     margin-bottom: 2%;
@@ -21,15 +23,19 @@
     grid-row-start: 2;
     grid-row-end: 3;
     grid-column-start: 1;
-    grid-column-end: 4;
-    width: 100%;
+    grid-column-end: 3;
+    width: 90%;
     max-height: 7em;
     padding-left: 20%;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+}
 
+.mapa:hover {
+    cursor: pointer;
 }
 
 .logosydireccion {
@@ -40,16 +46,49 @@
     padding-left: 0%;
 }
 
+.mapa {
+    height: 100%;
+    width: 100%;
+}
+
+.listalogos {
+    list-style: none;
+    color: black;
+}
+
+
 @media all and (max-width: 768px) {
     .contenedorconctact {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         text-align: center;
     }
 
+    .titlecontact {
+        grid-column-start: 1;
+        grid-column-end: 6;
+    
+        grid-row-start: 0;
+        grid-row-end: 1;
+        text-align: center;
+        
+        padding: 1% 0;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        background-color: #D89A9A;
+        font-family: "Philosopher", sans-serif;
+    }
+
     .contenedormapa {
-        width: 100%;
+        min-width: 60%;
         padding-left: 5%;
-        padding-right: 5%;
+       
+        padding-right: 0%;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        margin-top: 20px;
     }
 
     .logosydireccion {
@@ -59,9 +98,21 @@
             padding-right: 0%;
             grid-row-start: 3;
             grid-row-end: 4;
-            grid-column-start: 1;
-            grid-column-end: 4;
+            grid-column-start: 4;
+            grid-column-end: 6;
             margin-top: 20px;
         
+    }
+
+    .elementoslista {
+        padding: 0;
+        float: left;
+        
+    }
+
+    .mapa {
+        display: flex;
+        height: 100%;
+        width: 70%;
     }
 }
