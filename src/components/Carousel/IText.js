@@ -1,21 +1,9 @@
 import React, { useRef } from 'react';
 import TextProduct from './text';
 import './../../styles/Carousel/ICarousel.css'
-// import { unstable_renderSubtreeIntoContainer } from 'react-dom';
 
 const IText = ({ images, selectedIndex, handleImageClick}) => {
   const containerRef = useRef(null);
-
-  // const handleScroll = (scrollDirection) => {
-  //   const container = containerRef.current;
-  //   const scrollAmount = 300; // Adjust as needed
-
-  //   if (scrollDirection === 'left') {
-  //     container.scrollLeft -= scrollAmount;
-  //   } else if (scrollDirection === 'right') {
-  //     container.scrollLeft += scrollAmount;
-  //   }
-  // };
 
   const getNormalizedIndexText = (indextext) => {
     const lengthtext = images.length;
@@ -50,10 +38,6 @@ return (
     
   </div>
 );
-
-
-  
-  
 };
 
 export default IText;
