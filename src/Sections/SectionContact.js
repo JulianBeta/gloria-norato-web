@@ -22,15 +22,15 @@ function SectionContact() {
             </div> */}
 
             <div className='contenedormapa'>
-            <a className='mapa' target='_blank' href='https://maps.app.goo.gl/A4QojNyJgwrAt5Fp8'><SimpleMap /></a>
+            <a className='mapa' target='_blank' rel='noreferrer' href='https://maps.app.goo.gl/A4QojNyJgwrAt5Fp8'><SimpleMap /></a>
              </div>
             
             <div className='logosydireccion'>
                 <li className='listalogos'>
-                    <ul><img src={LogoMP} /> Carrera 53 No. 141 - 69 Local 102</ul>
-                    <ul><img src={LogoWA} /> +57 310 334 96 16</ul>
-                    <ul><img src={LogoIG} /> @glorialorato</ul>
-                     <ul><img src={LogoML} />glorialorato@gmail.com</ul>
+                    <ul className='elementoslista'><img src={LogoMP} alt='logoMapa'/> Carrera 53 No. 141 - 69 Local 102</ul>
+                    <ul className='elementoslista'><img src={LogoWA} alt='logoWhatsApp'/> +57 310 334 96 16</ul>
+                    <ul className='elementoslista'><img src={LogoIG} alt='logoInstagram'/> @glorialorato</ul>
+                     <ul className='elementoslista'><img src={LogoML} alt='logoMail'/>glorialorato@gmail.com</ul>
                 </li>
             </div>
            

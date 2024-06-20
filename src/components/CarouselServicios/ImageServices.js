@@ -8,7 +8,7 @@ const ImageServices = ({ src, isSelected, onClick }) => {
     
     <img
       src={src}
-      alt="carousel-image"
+      alt="Servicios"
       className={`carousel-image ${imageSize}`}
       onClick={onClick}
     ></img>
