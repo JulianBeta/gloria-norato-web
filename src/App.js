@@ -5,7 +5,6 @@ import { SectionServices } from "./Sections/SectionServices";
 import { SectionProducts } from "./Sections/SectionProducts";
 import { SectionContact } from './Sections/SectionContact';
 import SectionFooter from './Sections/SectionFooter';
-import { ServicesCarousel } from './components/CarouselServicios/ServicesCarousel';
 import logo from './assets/image/LogoGN.png'
 import './styles/SectionHeader.css'
 import logofondo from './assets/image/fondofinalfinal.jpg'
