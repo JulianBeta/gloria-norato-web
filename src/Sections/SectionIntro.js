@@ -26,7 +26,7 @@ function SectionIntro() {
                     Design Studio.<br></br> 
 
                     <br></br>¡Déjame ayudarte a alcanzar el look que siempre has deseado!</p>
-                <a target='_blank' href='https://api.whatsapp.com/send/?phone=573006822639'><button className="botonintro"> <b>AGENDA TU CITA</b></button></a>
+                <a target='_blank' href='https://api.whatsapp.com/send/?phone=573006822639' rel="noreferrer" ><button className="botonintro"> <b>AGENDA TU CITA</b></button></a>
             </div>
         </div>
     );

@@ -3,38 +3,18 @@ import ICarousel from './ICarousel.js';
 import './../../styles/Carousel/MainCarousel.css'
 import IText from './IText.js';
 
-const MainCarousel = () => { {
-    
+const MainCarousel = () => { 
 
-;
-    }
-
-    const imageFilenames = ['prod1.png', 'prod2.png', 'prod3.png', 'prod4.png', 'prod5.png', 'prod6.png']; 
-    const textFilenames = ['pruebatexto.png', 'champú.png', 'cremamanos.png', 'AcondicionadorHiDratante.png', 'Aceite.png', 'keraschampu.png'
-      
-    ];
-   
-    
-    
-    
-
+  const imageFilenames = ['prod1.png', 'prod2.png', 'prod3.png', 'prod4.png', 'prod5.png', 'prod6.png']; 
+  const textFilenames = ['pruebatexto.png', 'champú.png', 'cremamanos.png', 'AcondicionadorHiDratante.png', 'Aceite.png', 'keraschampu.png'];
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   const handleImageClick = (index, indextext) => {
-    setSelectedIndex(index, indextext);
+  setSelectedIndex(index, indextext);
   };
-
-  // const [selectedIndexText, setSelectedIndexText] = useState(0);
-
-  // const handleImageClick = (indextext) => {
-  //   setSelectedIndexText(indextext);
-  // };
-  
- 
 
   return (
     <div className="maincarrusel">
-      {/* <div className='contenedorcirculo'><div className='circulo'></div></div> */}
       <div className="carrusel">
       <ICarousel 
         images={imageFilenames}

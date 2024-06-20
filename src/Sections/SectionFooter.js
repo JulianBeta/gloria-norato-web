@@ -7,7 +7,7 @@ const SectionFooter = () => {
         <div className="footerprobe">
             <div >
             <div className='imagenlogocontacto'>
-                <img className='franja' src={LogoPequeño} />
+                <img className='franja' alt="logo pequeño" src={LogoPequeño} />
             </div> 
                     <div >
                      <div className="textfooter">Todos los derechos reservados</div><div className="textfooter">Gloria Norato</div>
