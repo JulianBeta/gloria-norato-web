@@ -9,7 +9,6 @@ const IText = ({ images, selectedIndex, handleImageClick}) => {
     const lengthtext = images.length;
     if (indextext < 0) {
       return lengthtext + (indextext % lengthtext);
-      console.log (indextext)
     }
     return indextext % lengthtext;
   };
