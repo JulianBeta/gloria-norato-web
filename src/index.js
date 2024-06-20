@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
-    <button  className='whatsapp'><a target='_blank' href='https://api.whatsapp.com/send/?phone=573006822639'> <img src={LogoWhatsapp} alt="wapp" /> </a></button>
+    <button  className='whatsapp'><a target='_blank' rel='noreferrer' href='https://api.whatsapp.com/send/?phone=573006822639'> <img src={LogoWhatsapp} alt="wapp" /> </a></button>
     
   </React.StrictMode>
 );
