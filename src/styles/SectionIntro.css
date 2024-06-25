@@ -78,7 +78,7 @@
     }
 
     .title {
-        padding: 15% 10%;
+        padding: 5% 5%;
         font-size: x-large;
     }
 
@@ -92,5 +92,11 @@
         width: 100%;
         margin: 0;
         border-radius: 0;
+    }
+
+    .imagen-gloria {
+        padding-top: 3%;
+        padding-bottom: 3%;
+        align-items: center;
     }
 }
