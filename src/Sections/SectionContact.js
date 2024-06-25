@@ -17,9 +17,7 @@ function SectionContact() {
                 <h1 c>CONTACTO</h1>
             </div>
 
-            {/* <div className='teesperamos'>
-                <h2>Te esperamos</h2>
-            </div> */}
+          
 
             <div className='contenedormapa'>
             <a className='mapa' target='_blank' rel='noreferrer' href='https://maps.app.goo.gl/A4QojNyJgwrAt5Fp8'><SimpleMap /></a>
