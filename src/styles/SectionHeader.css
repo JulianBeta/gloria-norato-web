@@ -7,7 +7,7 @@ header {
 
 .navbar {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     position: fixed;
     background-color: #D89A9A;
