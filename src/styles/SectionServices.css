@@ -35,7 +35,7 @@
 
 @media all and (max-width: 768px) {
     .contenedorSectionServices {
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 10px;
     }
 
