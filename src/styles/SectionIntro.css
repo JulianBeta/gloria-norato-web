@@ -7,7 +7,6 @@
 
 .imagen-gloria {
     padding-top: 15%;
-    
     max-height: 80vh;
     text-align: center;
     padding-left: 15%;
@@ -79,13 +78,8 @@
     }
 
     .title {
-        padding: 15% 10%;
+        padding: 5% 5%;
         font-size: x-large;
-    }
-
-    .imagen-gloria {
-        padding-top: 5%;
-        padding-bottom: 5%;
     }
 
     .text {

@@ -1,7 +1,6 @@
 import React from 'react'
 import { ServicesCarousel } from '../components/CarouselServicios/ServicesCarousel'
 import './../styles/SectionServices.css'
-import Slider2 from '../components/Carouselservise/CarouselServise'
 
 
 
@@ -20,8 +19,7 @@ export const SectionServices = () => {
             <li>Pistola pulverizadora para nanotecnología capilar con luz azul y láser led.</li><br></br>
           </ul>
         </div>
-        <div className='contenedorCarouselServices'><Slider2/></div>
-        {/* <div ><ServicesCarousel/></div> */}
+        <div className='contenedorCarouselServices'><ServicesCarousel/></div>
         
         
         </div>
