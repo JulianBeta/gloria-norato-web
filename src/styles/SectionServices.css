@@ -31,7 +31,6 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 5%;
-    padding-top: 5%;
 }
 
 @media all and (max-width: 768px) {
@@ -40,12 +39,7 @@
         gap: 10px;
     }
 
-    .contendorTextoServices {
+    .contendorTextoServices, .contenedorCarouselService {
         width: 90%;
-        padding-top: 5%;
-    }
-    .contenedorCarouselService {
-        width: 90%;
-        padding-bottom: 15%;
     }
 }
