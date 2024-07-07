@@ -3,7 +3,7 @@ import SimpleMap from '../components/Maps.js';
 import LogoML from './../assets/image/Imagenmail.jpg'
 import LogoWA from './../assets/image/ImagenWA.jpg'
 import LogoIG from './../assets/image/ImagenInstagram.jpg'
-
+import Slider from '../components/Carouselservise/CarouselServise.js';
 import LogoMP from './../assets/image/imagenubicacion.jpg'
 import './../styles/SectionContact.css'
 
@@ -22,7 +22,7 @@ function SectionContact() {
             <div className='contenedormapa'>
             <a className='mapa' target='_blank' rel='noreferrer' href='https://maps.app.goo.gl/A4QojNyJgwrAt5Fp8'><SimpleMap /></a>
              </div>
-            
+     
             <div className='logosydireccion'>
                 <li className='listalogos'>
                     <ul className='elementoslista'><img src={LogoMP} alt='logoMapa'/> Carrera 53 No. 141 - 69 Local 102</ul>
@@ -30,6 +30,8 @@ function SectionContact() {
                     <ul className='elementoslista'><img src={LogoIG} alt='logoInstagram'/> @glorialorato</ul>
                      <ul className='elementoslista'><img src={LogoML} alt='logoMail'/>glorialorato@gmail.com</ul>
                 </li>
+
+                
             </div>
            
 
