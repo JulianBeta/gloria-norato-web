@@ -34,7 +34,7 @@ function ImageCarousel ({ images, selectedIndex, handleImageClick }) {
   };
 
 return (
-  <div className='stylecarouselservices' ref={containerRef}>
+  <div  ref={containerRef}>
     {renderImages()}</div>
   
 );
