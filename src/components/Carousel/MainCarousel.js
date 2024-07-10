@@ -5,7 +5,7 @@ import IText from './IText.js';
 
 const MainCarousel = () => { 
 
-  const imageFilenames = ['prod1.png', 'prod2.png', 'prod3.png', 'prod4.png', 'prod5.png', 'prod6.png']; 
+  const imageFilenames = ['1.png',  '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png', '14.png', '15.png']; 
   const textFilenames = ['pruebatexto.png', 'champú.png', 'cremamanos.png', 'AcondicionadorHiDratante.png', 'Aceite.png', 'keraschampu.png'];
   const [selectedIndex, setSelectedIndex] = useState(0);
 
