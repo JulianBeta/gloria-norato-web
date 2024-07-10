@@ -1,4 +1,4 @@
-header {
+/* header {
     width: 100%;
     position: fixed;
     z-index: 50;
@@ -46,7 +46,7 @@ header {
 }
 
 /* Estilos para el menú hamburguesa */
-.hamburger {
+/* .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
@@ -57,9 +57,9 @@ header {
     background: gray;
     margin: 3px 0;
     width: 25px;
-}
+} */ 
 
-@media all and (max-width: 768px) {
+/* @media all and (max-width: 768px) {
     .navbar {
         justify-content: space-between;
     }
@@ -88,4 +88,4 @@ header {
         width: 100%;
         text-align: center;
     }
-}
+} */
