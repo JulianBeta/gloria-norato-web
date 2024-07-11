@@ -34,5 +34,9 @@ body {
   bottom: 0;
   right:  0;
   overflow: auto;
-  
+  height: 70px;
+  width: 70px;
+  overflow: hidden;
+  background-color: transparent;
+  border: none;
 }
