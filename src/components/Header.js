@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import "./../styles/Header.css"
-import logo from './../assets/image/LogoGN.png'
-
+import "./../styles/SectionHeader.css";
+import logo from './../assets/image/LogoGN.png';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -10,29 +9,23 @@ const Header = () => {
         setIsOpen(!isOpen);
     };
 
+    const closeMenu = () => {
+        setIsOpen(false);
+    };
+
     return (
         <header className="header">
-            
             <nav className={`menu ${isOpen ? 'open' : ''}`}>
-            {isOpen && (
-                    <>
-                        <span className="close-btn" onClick={toggleMenu}><b>X</b></span>
-                        <div className="logo">
-                            <a href="/"><img src={logo} alt="Logo" /></a>
-                        </div>
-                    </>
-                )}
-                
-                <a className="navbar-item" href="#section1" >CONOCEME</a>
-                <a className="navbar-item" href="#section2" >SERVICIOS</a>
-                <div className="logo">
-                            <a href="/"><img src={logo} alt="Logo" /></a>
-                        </div>
-                 <a className="navbar-item" href="#section3" >PRODUCTOS</a>       
-                 <a className="navbar-item" href="#section4" >CONTACTO</a>       
-
+                <a className="navbar-item" href="#section1" onClick={closeMenu}>CONOCEME</a>
+                <a className="navbar-item" href="#section2" onClick={closeMenu}>SERVICIOS</a>
+                <div className="logo-container">
+                    <a href="/"><img src={logo} alt="Logo" className="logo" /></a>
+                </div>
+                <a className="navbar-item" href="#section3" onClick={closeMenu}>PRODUCTOS</a>       
+                <a className="navbar-item" href="#section4" onClick={closeMenu}>CONTACTO</a>       
+                <span className={`close-btn ${isOpen ? 'visible' : ''}`} onClick={closeMenu}><b>X</b></span>
             </nav>
-            <div className="hamburger" onClick={toggleMenu}>
+            <div className={`hamburger ${isOpen ? 'hidden' : ''}`} onClick={toggleMenu}>
                 <div className="bar"></div>
                 <div className="bar"></div>
                 <div className="bar"></div>
