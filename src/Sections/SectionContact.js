@@ -1,11 +1,11 @@
 import React from 'react'
-import SimpleMap from '../components/Maps.js';
 import LogoML from './../assets/image/Imagenmail.jpg'
 import LogoWA from './../assets/image/ImagenWA.jpg'
 import LogoIG from './../assets/image/ImagenInstagram.jpg'
 
 import LogoMP from './../assets/image/imagenubicacion.jpg'
 import './../styles/SectionContact.css'
+import MapComponent from '../components/Maps.js';
 
 
 function SectionContact() {
@@ -20,7 +20,7 @@ function SectionContact() {
           
 
             <div className='contenedormapa'>
-            <a className='mapa' target='_blank' rel='noreferrer' href='https://maps.app.goo.gl/A4QojNyJgwrAt5Fp8'><SimpleMap /></a>
+            <a className='mapa' target='_blank' rel='noreferrer' href='https://maps.app.goo.gl/A4QojNyJgwrAt5Fp8'><MapComponent /></a>
              </div>
             
             <div className='logosydireccion'>
