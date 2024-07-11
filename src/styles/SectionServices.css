@@ -41,5 +41,6 @@
 
     .contendorTextoServices, .contenedorCarouselService {
         width: 90%;
+        margin-top: 5%;
     }
 }
