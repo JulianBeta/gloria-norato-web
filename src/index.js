@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import LogoWhatsapp from './../src/assets/image/WApp.jpg'
+import LogoWhatsapp from './../src/assets/image/WAI1.svg'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

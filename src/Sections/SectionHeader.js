@@ -29,10 +29,10 @@ function SectionHeader() {
                     <span></span>
                 </div>
                 <div className={`navbar-menu ${menuOpen ? 'active' : ''}`}>
-                        <a className="navbar-item" href="#section1" onClick={() => scrollToSection('section1')}>CONOCEME</a>
-                        <a className="navbar-item" href="#section2" onClick={() => scrollToSection('section2')}>SERVICIOS</a>
-                        <a className="navbar-item" href="#section3" onClick={() => scrollToSection('section3')}>PRODUCTOS</a>
-                        <a className="navbar-item" href="#section4" onClick={() => scrollToSection('section4')}>CONTACTO</a>
+                        <a className="navbar-item" href="#section1" >CONOCEME</a>
+                        <a className="navbar-item" href="#section2" >SERVICIOS</a>
+                        <a className="navbar-item" href="#section3" >PRODUCTOS</a>
+                        <a className="navbar-item" href="#section4" >CONTACTO</a>
                 </div>
             </div> 
         </header>  
