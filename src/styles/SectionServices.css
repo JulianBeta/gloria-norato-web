@@ -30,7 +30,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 5%;
+    padding-bottom: 8%;
+    padding-top: 8%;
 }
 
 @media all and (max-width: 768px) {
