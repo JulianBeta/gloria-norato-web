@@ -40,3 +40,10 @@ body {
   background-color: transparent;
   border: none;
 }
+
+@media all and (max-width: 768px) {
+  .whatsapp {
+    height: 120px;
+    width: 120px;
+  }
+}
