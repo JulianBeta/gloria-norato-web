@@ -5,14 +5,16 @@
     gap: 5%;
     width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .stylecarouselservices {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    overflow: hidden;
+    min-width: 100%;
+    position: relative;
+    transition: transform 05s ease-in-out;
 }
 
 .contendorTextoServices {
@@ -28,7 +30,8 @@
 }
 
 .contenedorCarouselService {
-    width: 40%;
+    width: 100%;
+    position: relative;
 }
 
 .tituloServicios {
@@ -52,8 +55,16 @@
         gap: 10px;
     }
 
-    .contendorTextoServices, .contenedorCarouselService {
+    .contendorTextoServices {
         width: 90%;
         margin-top: 5%;
     }
+
+    .contenedorCarouselService {
+        width: 20%;
+        margin-top: 5%;
+        padding: 4%;
+    }
 }
+
+
