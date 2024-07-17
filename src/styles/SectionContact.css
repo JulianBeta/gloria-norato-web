@@ -22,7 +22,7 @@
     padding: 1% 0;
     margin-top: 2%;
     margin-bottom: 2%;
-    background-color: #D89A9A;
+
     font-family: "Philosopher", sans-serif;
 }
 
@@ -81,20 +81,21 @@
         padding: 1% 0;
         margin-top: 2%;
         margin-bottom: 2%;
-        background-color: #D89A9A;
+       
         font-family: "Philosopher", sans-serif;
     }
 
     .contenedormapa {
-        min-width: 60%;
+        min-width: 80%;
         padding-left: 5%;
        
         padding-right: 0%;
         grid-row-start: 3;
         grid-row-end: 4;
-        grid-column-start: 1;
-        grid-column-end: 5;
+        grid-column-start: 0;
+        grid-column-end: 4;
         margin-top: 20px;
+      
     }
 
     .logosydireccion {
