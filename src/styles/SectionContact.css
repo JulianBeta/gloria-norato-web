@@ -9,20 +9,17 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     font-family: "Philosopher", sans-serif;
+    padding-bottom: 5%;
 }
 
 .titlecontact {
     grid-column-start: 1;
     grid-column-end: 4;
-
     grid-row-start: 0;
     grid-row-end: 1;
     text-align: center;
-    
-    padding: 1% 0;
-    margin-top: 2%;
+    padding: 5% 0;
     margin-bottom: 2%;
-
     font-family: "Philosopher", sans-serif;
 }
 

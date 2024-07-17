@@ -39,7 +39,8 @@
 }
 
 .title {
-    padding: 10% 0%;
+    padding-top: 10%;
+    padding-bottom: 5%;
     font-size: xxx-large;
     font-family: "Philosopher", sans-serif;
     font-weight: 700;
@@ -66,7 +67,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1150px) {
     .section-intro {
         flex-direction: column;
     }
