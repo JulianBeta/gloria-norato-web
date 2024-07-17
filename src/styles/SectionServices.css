@@ -7,6 +7,14 @@
     position: relative;
 }
 
+.stylecarouselservices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+}
+
 .contendorTextoServices {
     width: 25%;
 }
@@ -32,6 +40,10 @@
     align-items: center;
     padding-bottom: 8%;
     padding-top: 8%;
+}
+
+.carousel-container img {
+    display: inline-block;
 }
 
 @media all and (max-width: 768px) {
