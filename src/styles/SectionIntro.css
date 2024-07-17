@@ -8,26 +8,25 @@
 .imagen-gloria {
     padding-top: 15%;
     max-height: 80vh;
+    max-width: 100vw;
     text-align: center;
-    padding-left: 15%;
     padding-bottom: 15%;
     z-index: 1;
+    left: 0;
 }
 
 .section-left {
     flex: 0 0 55%;
     max-width: 55%;
     position: relative;
+    text-align: center;
 }
 
 .section-left::before {
     content: '';
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
-    border-radius: 50%;
     width: 80%;
     height: 80%;
     z-index: -1;
@@ -104,5 +103,6 @@
         padding-top: 3%;
         padding-bottom: 3%;
         align-items: center;
+
     }
 }
