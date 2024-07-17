@@ -58,12 +58,10 @@
 }
 
 .hamburger .bar {
-    display: flex;
     height: 3px;
     background: gray;
-    margin: 10px 10px;
-    width: 50px;
-    align-items: center;
+    margin: 5px 0;
+    width: 25px;
 }
 
 .close-btn {
@@ -92,9 +90,8 @@
         right: 10px;
         width: 30px;
         height: 30px;
-        padding-right: 80px;
-        padding-top: 15px;
-        
+        padding-right: 30px;
+        padding-top: 5px;
     }
 
     .menu {
@@ -115,7 +112,6 @@
         display: flex;
         height: 100vh;
     }
-
 
     .navbar-item {
         padding: 1rem;
@@ -157,7 +153,10 @@
 
     .logo-container-desktop {
         display: flex; /* Display desktop logo container on big screens */
-    
+        align-items: center;
+        justify-content: center;
+    }
+
     .menu {
         display: flex;
         justify-content: space-around;
