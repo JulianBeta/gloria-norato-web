@@ -40,5 +40,11 @@
     width: 0em;
   }
 
-
-  
+  @media all and (max-width: 768px) {
+    .main-image {
+        width: 10em;
+    }
+    .side-image {
+      width: 4em;
+  }
+  }
