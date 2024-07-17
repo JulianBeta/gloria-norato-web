@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "./../styles/SectionHeader.css";
 import logo from './../assets/image/LogoGN.png';
 
@@ -12,6 +12,19 @@ const Header = () => {
     const closeMenu = () => {
         setIsOpen(false);
     };
+
+    useEffect(() => {
+        const handleHashChange = () => {
+            const offset = document.querySelector('.header').offsetHeight;
+            window.scrollBy(0, -offset);
+        };
+
+        window.addEventListener('hashchange', handleHashChange);
+
+        return () => {
+            window.removeEventListener('hashchange', handleHashChange);
+        };
+    }, []);
 
     return (
         <header className="header">
