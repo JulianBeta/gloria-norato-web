@@ -95,6 +95,7 @@
     }
 
     .menu {
+        display: none;
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -118,7 +119,6 @@
         text-align: center;
         border-top: 1px solid gray;
         top: 100px;
-        
     }
 
     .hamburger.hidden {
