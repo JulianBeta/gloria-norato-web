@@ -14,17 +14,24 @@
 .logo-container {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: block;
 }
 
-.logo.open {
+/* Added a new class for desktop logo */
+.logo-container-desktop {
+    display: none; /* Hidden by default, only displayed on big screens */
+}
+
+.logo-desktop {
     width: 80px;
     height: 80px;
+    display: block;
 }
 
 /* Menu styles */
@@ -68,32 +75,20 @@
     .header {
         flex-direction: row;
         justify-content: space-between;
-        height: 80px;
+        height: 60px;
     }
 
-    .logo {
-        display: block;
-        width: 100px;
-        min-height: 100px;
+    .logo-container {
         position: absolute;
-        top: 20px;
-        left: 20px;
-    }
-
-    .navbar-item {
-        text-decoration: none;
-        padding: 0.5rem;
-        margin: 0 0.5rem;
-        color: gray;
-        font-family: "Philosopher", sans-serif;
-        font-weight: 400;
-        font-style: normal;
+        top: 0;
+        left: 10px;
+        z-index: 10000;
     }
 
     .hamburger {
         display: block;
         position: absolute;
-        top: 10px;
+        top: 20px;
         right: 10px;
         width: 30px;
         height: 30px;
@@ -103,7 +98,6 @@
     }
 
     .menu {
-        display: none;
         flex-direction: column;
         align-items: center;
         width: 100%;
@@ -113,13 +107,23 @@
         left: 0;
         z-index: 1000;
         padding-top: 80px;
+        justify-content: space-evenly;
     }
 
     .menu.open {
         display: flex;
+        height: 100vh;
     }
 
- 
+
+    .navbar-item {
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid gray;
+        top: 100px;
+        
+    }
 
     .hamburger.hidden {
         display: none;
@@ -128,7 +132,7 @@
     .close-btn.visible {
         display: block;
         position: absolute;
-        top: 20px;
+        top: 0;
         right: 20px;
         font-size: 32px;
         color: #fff;
@@ -137,25 +141,27 @@
         padding-right: 35px;
     }
 
+    /* Ensures the mobile logo is always visible */
+    .menu .logo {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+}
+
+/* Added styles for big screens to display the logo in the middle of the menu */
+@media all and (min-width: 769px) {
     .logo-container {
-        width: 0;
-        height: 0;
+        display: none; /* Hide main logo container on big screens */
     }
-  
 
-    .menu a {
+    .logo-container-desktop {
+        display: flex; /* Display desktop logo container on big screens */
+    
+    .menu {
         display: flex;
-        color: #2B6773;
-        padding: 15px 0;
-        width: 100%;
-        height: 100px;
-        text-align: center;
-        border-top: 1px solid gray;
+        justify-content: space-around;
         align-items: center;
-        justify-content: center;
-    }
-
-    .menu a:first-child {
-        border-top: none;
+        width: 100%;
     }
 }
