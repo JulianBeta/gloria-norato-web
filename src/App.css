@@ -2,3 +2,10 @@
     font-family: "Philosopher", sans-serif;
     color: #707070;
 }
+
+html {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
