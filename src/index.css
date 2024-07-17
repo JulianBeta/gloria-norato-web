@@ -22,13 +22,6 @@ body {
 
 }
 
-@media all and (max-width: 680px) {
-  body {
-      
-      width: 100vh;
-     
-  }}
-
 .whatsapp {
   position: fixed;
   bottom: 0;
