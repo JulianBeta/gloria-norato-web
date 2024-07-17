@@ -16,12 +16,13 @@ export function ServicesCarousel() {
     };
 
   return (
-          
+    <div className="carousel-container">
       <ImageCarousel
         images={imageFilenames}
         selectedIndex={selectedIndex}
         handleImageClick={handleImageClick}
       />
+    </div>
     
   );
 }
