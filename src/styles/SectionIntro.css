@@ -6,13 +6,11 @@
 }
 
 .imagen-gloria {
-    padding-top: 15%;
+    padding-top: 6%;
     max-height: 80vh;
     max-width: 100vw;
     text-align: center;
     padding-bottom: 15%;
-    z-index: 1;
-    left: 0;
 }
 
 .section-left {

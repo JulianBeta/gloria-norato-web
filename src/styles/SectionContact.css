@@ -135,5 +135,6 @@
         display: flex;
         height: 100%;
         width: 70%;
+        padding-bottom: 5%;
     }
 }
