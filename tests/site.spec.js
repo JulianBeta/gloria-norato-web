@@ -42,6 +42,13 @@ test('navigation reaches every section', async ({ page, isMobile }) => {
   }
 });
 
+test('direct links to a section (shared /#contacto URLs) open at that section', async ({ page }) => {
+  for (const id of ['servicios', 'productos', 'instagram', 'contacto']) {
+    await page.goto(`/#${id}`);
+    await expect(page.locator(`#${id}`)).toBeInViewport();
+  }
+});
+
 test('mobile menu is accessible: toggles, closes with Esc', async ({ page, isMobile }) => {
   test.skip(!isMobile, 'Mobile-only menu');
   const toggle = page.getByRole('button', { name: 'Abrir menú' });
@@ -105,7 +112,7 @@ test('contact: map pin at the studio, directions and working links', async ({ pa
   expect(Math.abs(p.x + p.width / 2 - (m.x + m.width / 2))).toBeLessThan(3);
   expect(Math.abs(p.y + p.height - (m.y + m.height / 2))).toBeLessThan(3);
   await expect(page.getByTestId('directions')).toHaveAttribute('href', /destination=4\.72677\d*,-74\.05545\d*/);
-  await expect(contact.getByRole('link', { name: '@glorialorato' })).toHaveAttribute('href', 'https://www.instagram.com/glorialorato/');
+  await expect(contact.getByRole('link', { name: '@glorianorato' })).toHaveAttribute('href', 'https://www.instagram.com/glorianorato/');
   await expect(contact.getByRole('link', { name: 'glorialorato@gmail.com' })).toHaveAttribute('href', 'mailto:glorialorato@gmail.com');
   await expect(contact.getByRole('link', { name: 'Llamar' })).toHaveAttribute('href', 'tel:+573103349616');
 });

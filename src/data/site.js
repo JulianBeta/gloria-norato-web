@@ -5,8 +5,8 @@ export const SITE = {
   tagline: 'Hair Design Studio · Bogotá',
   phoneDisplay: '+57 310 334 96 16',
   whatsapp: '573103349616',
-  // TODO(Julian): confirm the handle and email; both read "glorialorato" (L) on the original site.
-  instagram: 'glorialorato',
+  instagram: 'glorianorato',
+  // TODO(Julian): confirm the email; the original site spelled it "glorialorato" (with an L).
   email: 'glorialorato@gmail.com',
   address: 'Carrera 53 No. 141-69, Local 102',
   city: 'Bogotá, Colombia',
