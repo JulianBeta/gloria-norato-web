@@ -1,4 +1,4 @@
-# Deploys come from GitHub Actions (tests must pass first); this file also covers manual `netlify deploy`.
+# Netlify builds this repo from `main` through its GitHub integration; these settings override the ones in the Netlify UI.
 [build]
   command = "npm run build"
   publish = "dist"

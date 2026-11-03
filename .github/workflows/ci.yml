@@ -1,4 +1,4 @@
-name: Test & Deploy
+name: Tests
 
 on:
   push:
@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: deploy-${{ github.ref }}
+  group: tests-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -27,25 +27,3 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: ${{ !cancelled() }}
         with: { name: playwright-report, path: playwright-report/, retention-days: 14 }
-
-  # Deploys only after the tests pass, and only from main.
-  deploy:
-    needs: test
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
-    env:
-      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
-      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
-    steps:
-      - uses: actions/checkout@v4
-      - name: Skip when Netlify secrets are missing
-        if: env.NETLIFY_AUTH_TOKEN == '' || env.NETLIFY_SITE_ID == ''
-        run: echo "::warning::NETLIFY_AUTH_TOKEN / NETLIFY_SITE_ID not set; skipping deploy."
-      - uses: actions/setup-node@v4
-        if: env.NETLIFY_AUTH_TOKEN != '' && env.NETLIFY_SITE_ID != ''
-        with: { node-version: 22, cache: npm }
-      - if: env.NETLIFY_AUTH_TOKEN != '' && env.NETLIFY_SITE_ID != ''
-        run: npm ci && npm run build
-      - name: Deploy to glorianorato.netlify.app
-        if: env.NETLIFY_AUTH_TOKEN != '' && env.NETLIFY_SITE_ID != ''
-        run: npx -y netlify-cli@latest deploy --dir=dist --prod --message "${{ github.sha }}"

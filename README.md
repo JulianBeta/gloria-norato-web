@@ -1,10 +1,10 @@
 # Gloria Norato · Hair Design Studio
 
-[![Test & Deploy](https://github.com/JulianBeta/gloria-norato-web/actions/workflows/ci.yml/badge.svg)](https://github.com/JulianBeta/gloria-norato-web/actions/workflows/ci.yml)
+[![Tests](https://github.com/JulianBeta/gloria-norato-web/actions/workflows/ci.yml/badge.svg)](https://github.com/JulianBeta/gloria-norato-web/actions/workflows/ci.yml)
 
 Website of Gloria Norato's hair design studio in Bogotá → **https://glorianorato.netlify.app**
 
-Built with React 19 + Vite. A Playwright suite tests every change on desktop and mobile before it's deployed to Netlify.
+Built with React 19 + Vite. A Playwright suite tests every change on desktop and mobile, and Netlify deploys `main` automatically.
 
 ## What the site does
 
@@ -37,12 +37,12 @@ npm test           # Playwright: desktop + mobile, links, gallery, filters, map,
 
 ## Deployment
 
-`.github/workflows/ci.yml` runs the tests on every push. On `main`, if they pass, it deploys `dist/` to Netlify with the CLI. This needs two repository secrets:
+Netlify builds and publishes `main` automatically through its GitHub integration (site `glorianorato`).
+`netlify.toml` sets the build command (`npm run build`), the publish folder (`dist`), Node 22 and cache headers,
+overriding the old Create React App settings in the Netlify UI.
 
-- `NETLIFY_AUTH_TOKEN`: a personal access token (Netlify → User settings → Applications)
-- `NETLIFY_SITE_ID`: the site's API ID (Site configuration → General)
-
-`netlify.toml` sets the build command, Node version and cache headers, so manual deploys (`netlify deploy --prod`) behave the same way.
+`.github/workflows/ci.yml` runs the Playwright suite on every push and pull request. Open a pull request to see
+the tests (and a Netlify deploy preview) before merging into `main`.
 
 ---
 
