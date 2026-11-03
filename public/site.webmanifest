@@ -1,0 +1,13 @@
+{
+  "name": "Gloria Norato Hair Design Studio",
+  "short_name": "Gloria Norato",
+  "lang": "es",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#d89a9a",
+  "background_color": "#f4ece1",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
