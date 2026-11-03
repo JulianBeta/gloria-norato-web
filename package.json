@@ -3,13 +3,14 @@
   "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "Website of Gloria Norato Hair Design Studio (Bogotá)",
+  "description": "Website of Gloria Norato Hair Design Studio (Bogot\u00e1)",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 4173 --strictPort",
     "test": "playwright test",
-    "test:ui": "playwright test --ui"
+    "test:ui": "playwright test --ui",
+    "test:live": "BASE_URL=https://glorianorato.netlify.app playwright test"
   },
   "dependencies": {
     "leaflet": "1.9",
