@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Gloria Norato · Hair Design Studio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![Test & Deploy](https://github.com/JulianBeta/gloria-norato-web/actions/workflows/ci.yml/badge.svg)](https://github.com/JulianBeta/gloria-norato-web/actions/workflows/ci.yml)
 
-## Available Scripts
+Website of Gloria Norato's hair design studio in Bogotá → **https://glorianorato.netlify.app**
 
-In the project directory, you can run:
+Built with React 19 + Vite. A Playwright suite tests every change on desktop and mobile before it's deployed to Netlify.
 
-### `npm start`
+## What the site does
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+| Section | Features |
+|---|---|
+| **Header** | Logo between the links on desktop; shrinks on scroll and highlights the current section. Full-screen menu on mobile (keyboard and Esc support). |
+| **Conóceme** | Portrait and intro. **"Agenda tu cita"** opens WhatsApp with a ready-made message. |
+| **Servicios** | Six service cards; each **"Consultar"** opens WhatsApp asking about that specific service. |
+| **Nuestro trabajo** | Swipeable photo gallery with arrows, dots and gentle autoplay (pauses on hover, touch and when the visitor prefers reduced motion). Tap a photo to open it full screen. |
+| **Productos** | 14 products with **brand filters** (L'Oréal · Moroccanoil · Kérastase), real text prices and a **"Lo quiero"** button that sends the product to WhatsApp. |
+| **Contacto** | Map with the studio's pin (loaded only when it scrolls into view), **"Cómo llegar"** directions, tap-to-call/WhatsApp/Instagram/email links and copy buttons. Optional opening hours with a live **"Abierto ahora"** badge. |
+| **Everywhere** | Floating WhatsApp button, back-to-top (desktop), subtle scroll-reveal animations, WhatsApp/Facebook link previews, and Google-friendly `HairSalon` structured data. |
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Editing content
 
-### `npm test`
+Everything Gloria might change lives in `src/data/`:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **`site.js`**: phone, WhatsApp, Instagram, email, address, map coordinates and **opening hours** (`hours: null` hides the hours and the "Abierto ahora" badge until they're filled in).
+- **`products.js`**: product names, brands and prices (COP). Images go in `public/img/products/<slug>.webp`.
+- **`services.js`**: service cards and gallery photos (`public/img/gallery/<name>.webp` plus a `-sm.webp` thumbnail).
 
-### `npm run build`
+## Run it
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+npm install
+npm run dev        # http://localhost:5173
+npm run build      # production build in dist/
+npm test           # Playwright: desktop + mobile, links, gallery, filters, map, accessibility
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`.github/workflows/ci.yml` runs the tests on every push. On `main`, if they pass, it deploys `dist/` to Netlify with the CLI. This needs two repository secrets:
 
-### `npm run eject`
+- `NETLIFY_AUTH_TOKEN`: a personal access token (Netlify → User settings → Applications)
+- `NETLIFY_SITE_ID`: the site's API ID (Site configuration → General)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`netlify.toml` sets the build command, Node version and cache headers, so manual deploys (`netlify deploy --prod`) behave the same way.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Built by [Julian Betancourt Cuervo](https://julianbeta.github.io).
