@@ -55,6 +55,7 @@ npm install
 npm run dev        # http://localhost:5173
 npm run build      # production build in dist/
 npm test           # Playwright: desktop + mobile, links, gallery, filters, map, accessibility
+npm run test:live  # the same suite against https://glorianorato.netlify.app
 ```
 
 ## Deployment
